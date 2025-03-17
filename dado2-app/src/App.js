@@ -1,8 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
-//import Image from 'next/image';
-import Image from 'public/image';
+//import Image from 'public/image';
 
 function DiceGame() {
   const [playerScore, setPlayerScore] = useState(0);
@@ -74,9 +73,9 @@ function DiceGame() {
               {
                 playerRoll !== null && (
                   <div>
-                    <p>Jogador 1</p>
-                    <Image
-                      src={`/imagens/dado${playerRoll}.png`}
+                    <p className='nome'>Jogador 1</p>
+                    <img
+                      src={`/image/dado${playerRoll}.png`}
                       width={100}
                       height={100}
                       alt='Face do dado'
@@ -96,8 +95,8 @@ function DiceGame() {
               {player2Roll !== null && (
                 <div>
                   <p>Jogador 2</p>
-                  <Image
-                    src={`/imagens/dado${player2Roll}.png`}
+                  <img
+                    src={`/image/dado${player2Roll}.png`}
                     width={100}
                     height={100}
                     alt='Face do dado'
